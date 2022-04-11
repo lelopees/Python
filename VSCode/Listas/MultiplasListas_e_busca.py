@@ -1,0 +1,30 @@
+equipamentos =[]
+valores = []
+seriais = []
+departamentos = [] 
+resposta = "S"
+bGuardaEqp = False
+
+while resposta == "S":
+    equipamentos.append(input("Equipamento: "))
+    valores.append(float(input("Valor: ")))
+    seriais.append(int(input("Numero Serial: ")))
+    departamentos.append(input("Departamento: "))
+    # \"S\" para que seja impresso aspas dupla
+    resposta = input("Digite \"S\" para continuar :").upper()
+
+busca=input("\nDigite o nome do equipamento que deseja buscar: ")
+for indice in range(0, len(equipamentos)):
+    if busca==equipamentos[indice]:
+    # \n pula uma linha
+        print("Valor: ", valores[indice])
+        print("Serial......: ", seriais[indice])          
+        bGuardaEqp = True
+    else:
+       # if bGuardaEqp == False:
+            bGuardaEqp = bGuardaEqp
+
+if bGuardaEqp == False:
+    print("Equipamento não encontrado")
+
+  

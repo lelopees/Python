@@ -1,0 +1,3 @@
+Python é uma linguagem multi paradigma, é interpretada;
+
+
